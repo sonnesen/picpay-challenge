@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: adminpwd
+      MYSQL_ROOT_PASSWORD: rootpwd
+      MYSQL_DATABASE: picpaydb
+    ports:
+      - "3306:3306"

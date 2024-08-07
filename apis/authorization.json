@@ -1,0 +1,67 @@
+{
+  "uuid": "aa7f32b8-91a3-4b0e-b3d2-37ef5c8f43ee",
+  "lastMigration": 22,
+  "name": "PicPay - Authorization",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 8090,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "c3dd1963-f6e0-4cd1-a954-618f26fa0d91",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "authorization",
+      "responses": [
+        {
+          "uuid": "36edda14-564c-4239-8d6d-29c06a024d25",
+          "body": "{\n  \"authorized\": true\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
